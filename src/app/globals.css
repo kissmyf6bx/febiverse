@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-samarkan: 'Samarkan';
+  }
+}
+.typing-effect .subject {
+  color: #32CD32; 
+}
+
+.typing-effect {
+  color: white;
+}
+.loader {
+  border: 4px solid #f3f3f3; 
+  border-top: 4px solid #32CD32; 
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* Hide Safari’s overlay controls for the background video only */
+.bg-video::-webkit-media-controls { display: none !important; }
+.bg-video::-webkit-media-controls-enclosure { display: none !important; }
+.bg-video::-webkit-media-controls-start-playback-button { display: none !important; }
+

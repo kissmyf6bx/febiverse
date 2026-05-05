@@ -1,0 +1,30 @@
+        
+        {/* Circular Gallery */}
+        <section className="w-full pt-8">
+          <h2 className="text-2xl font-semibold mb-4">Snapshots</h2>
+
+          <ul className="grid gap-5 grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4">
+            {gallery.map((img, i) => (
+              <li key={i} className="flex items-center justify-center">
+                <div
+                  className="relative aspect-square w-36 sm:w-40 md:w-44 rounded-full overflow-hidden
+                             ring-1 ring-white/10 shadow-[0_8px_40px_rgba(0,0,0,0.5)]
+                             transition-transform duration-300 ease-out hover:scale-105"
+                  title={img.alt}
+                >
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 9rem, (max-width: 768px) 10rem, 11rem"
+                  />
+                </div>
+              </li>
+            ))}
+          </ul>
+
+          <p className="sr-only">
+            Gallery of circular photos showing Febin Sebastian at work — editing, coding, and music.
+          </p>
+        </section>
