@@ -5,11 +5,11 @@ const projects = [
   {
     id: 1,
     type: 'video',
-    src: 'https://player.vimeo.com/video/1117414686', 
+    src: 'https://player.vimeo.com/video/1189490778?h=7d83c0bf13', 
     altText: 'Video Editing Project 1',
-    description: 'An example of a recent video editing project with vfx.',
+    description: 'Professional color grading and masking',
     href: '#',
-    posterSrc: '/thumbnails/edit-project-1-thumb.jpg'
+    posterSrc: '/thumbnails/neha.jpg'
   },
   {
     id: 2,
@@ -26,15 +26,6 @@ const projects = [
     altText: 'Game Development Project 1',
     description: 'A simple game built using HTML, CSS and Javascript.',
     href: 'https://catch-the-id.netlify.app'
-  },
-  {
-    id: 4,
-    type: 'video',
-    src: 'https://player.vimeo.com/video/1127072292', 
-    altText: 'Video Editing Project 2',
-    description: 'A Birthday video edited using after effects.',
-    href: '#',
-    posterSrc: '/thumbnails/edit-project-2-thumb.heic'
   },
 ];
 
@@ -69,3 +60,6 @@ export default function ProjectsPage() {
     </main>
   );
 }
+
+
+<iframe title="vimeo-player" src="c" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>
